@@ -1,0 +1,32 @@
+/* CSS Variables */
+:root {
+    /* Colors */
+    --Very-Dark-Grayish-Blue: #48556a;
+    --Desaturated-Dark-Blue: #6d7f97;
+    --Grayish-Blue: #9eafc2;
+    --Light-Grayish-Blue: #ecf2f8;
+
+    /* Fonts */
+    --Manrope: 'Manrope', sans-serif;
+    --regular: 500;
+    --bold: 700;
+}
+
+
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+}
