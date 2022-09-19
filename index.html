@@ -4,31 +4,37 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- Style Sheets -->
+		<!-- 
+			Style Sheets
+		 -->
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/styles.css" />
-		<!-- JavaScript -->
+		<!-- 
+			JavaScript
+		 -->
 		<script defer src="app.js"></script>
 		<title>Frontend Mentor | Article Preview Card</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<main class="card">
-				<picture class="card__image"></picture>
+				<div class="card__image-container">
+					<img class="card__image" src="images/drawers.jpg" alt="image of drawers" />
+				</div>
 				<div class="container">
 					<!-- Body -->
 					<article class="card__body">
 						<h1 class="card__heading">
-							Shift the overall look and feel by adding these wonderful touches to furniture
-							in your home
+							Shift the overall look and feel by adding these wonderful touches to
+							furniture in your home
 						</h1>
 						<p class="card__text">
 							Ever been in a room and felt like something was missing? Perhaps it felt
-							slightly bare and uninviting. I've got some simple tips to help you make any
-							room feel complete.
+							slightly bare and uninviting. I've got some simple tips to help you make
+							any room feel complete.
 						</p>
 					</article>
-			
+
 					<!-- Footer -->
 					<div class="card__footer">
 						<img
@@ -44,7 +50,7 @@
 							<img src="images/icon-share.svg" alt="share-arrow pointing to right" />
 						</button>
 					</div>
-			
+
 					<!-- Active class -->
 					<div class="card__footer active">
 						<p class="card__footer-share">share</p>
@@ -52,14 +58,13 @@
 							<img src="images/icon-facebook.svg" alt="icon-facebook" />
 							<img src="images/icon-twitter.svg" alt="icon-facebook" />
 							<img src="images/icon-pinterest.svg" alt="icon-facebook" />
-						</div class="card__footer-icons">
+						</div>
 						<button type="button" class="card__button-active">
-							<img src="images/icon-share white.svg" alt="share-arrow pointing to right" />
+							<img src="images/icon-share-white.svg" alt="share-arrow" />
 						</button>
 						<div class="triangle"></div>
 					</div>
 				</div>
-			
 			</main>
 		</div>
 		<div class="attribution">
