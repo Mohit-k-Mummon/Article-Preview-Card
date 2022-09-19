@@ -12,7 +12,7 @@ button.addEventListener('click', function () {
 		cardFooterActive.style.maxHeight = '100vh';
 		if (window.matchMedia('(min-width: 1024px').matches) {
 			button.innerHTML =
-				'<img src="images/icon-share white.svg" alt="share-arrow pointing to right" />';
+				'<img src="images/icon-share white.svg" alt="white version share arrow" />';
 			button.style.backgroundColor = 'var(--Desaturated-Dark-Blue)';
 		}
 		active = 'true';
