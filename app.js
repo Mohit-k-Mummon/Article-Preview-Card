@@ -10,11 +10,18 @@ button.addEventListener('click', function () {
 	if (active !== 'true') {
 		cardFooterActive.style.opacity = '1';
 		cardFooterActive.style.maxHeight = '100vh';
+		if (window.matchMedia('(min-width: 1024px').matches) {
+			button.innerHTML =
+				'<img src="images/icon-share white.svg" alt="share-arrow pointing to right" />';
+			button.style.backgroundColor = 'var(--Desaturated-Dark-Blue)';
+		}
 		active = 'true';
 	} else {
 		cardFooterActive.style.opacity = '0';
 		cardFooterActive.style.maxHeight = '0';
-
+		button.innerHTML =
+			'<img src="images/icon-share.svg" alt="share-arrow pointing to right" />';
+		button.style.backgroundColor = 'var(--Light-Grayish-Blue)';
 		active = 'false';
 	}
 });

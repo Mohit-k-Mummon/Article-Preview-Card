@@ -57,6 +57,7 @@ h1 {
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0px 5px 20px 1px #aabed37d;
 }
 
 .container {
@@ -113,6 +114,7 @@ h1 {
     color: var(--Very-Dark-Grayish-Blue);
     font-weight: var(--bold);
     line-height: 1.3;
+    margin-bottom: 1rem;
 }
 
 .card__text {
@@ -179,8 +181,8 @@ h1 {
 }
 
 .card__button {
-    height: 3rem;
-    width: 3rem;
+    height: 3.2rem;
+    width: 3.2rem;
     background-color: var(--Light-Grayish-Blue);
     border-radius: 50%;
     display: flex;
@@ -190,6 +192,7 @@ h1 {
     border: none;
     position: absolute;
     right: 3rem;
+    transition: 0.4s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -211,19 +214,19 @@ h1 {
 
 /* Card Footer Js Styling */
 .card__footer.active {
-    background-color: var(--Very-Dark-Grayish-Blue);
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.75rem 3rem 2.3rem 3rem;
-    transition: ease-in-out 0.4s;
-    display: flex;
-    opacity: 0;
-    height: 8rem;
-    position: absolute;
-    bottom: -8px;
+    background-color: var(--Very-Dark-Grayish-Blue);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    bottom: 0;
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+    opacity: 0;
+    padding: 1rem 3rem 1rem 3rem;
+    position: absolute;
+    transition: ease-in-out 0.4s;
+    width: 100%;
 }
 
 
@@ -233,6 +236,9 @@ h1 {
     text-transform: uppercase;
     color: var(--Grayish-Blue);
     font-weight: var(--regular);
+    position: relative;
+    top: 0.2rem;
+    opacity: 0.8;
 }
 
 .card__img-container-active {
@@ -257,9 +263,9 @@ h1 {
 }
 
 .card__button-active {
-    height: 3rem;
-    width: 3rem;
-    background-color: var(--Light-Grayish-Blue);
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: var(--Desaturated-Dark-Blue);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -269,15 +275,19 @@ h1 {
     position: absolute;
     right: 3rem;
 }
+.triangle {
+    display: none;
+}
 
 @media screen and (min-width:1024px) {
     .card__footer.active {
         bottom: 0;
         border-radius: 10px;
         width: 25rem;
-        top: 12rem;
+        top: 13rem;
         right: -6.9rem;
-        padding: 1.75rem 3rem 1.75rem 3rem;
+        height: 6rem;
+        padding: 1rem 3rem 1rem 3rem;
     }
 
     .card__footer-icons {
@@ -287,6 +297,17 @@ h1 {
     .card__button-active {
         display: none;
     }
+
+    .triangle {
+        height: 2rem;
+        width: 2rem;
+        background-color: var(--Very-Dark-Grayish-Blue);
+        position: absolute;
+        right: 46%;
+        transform: rotate(45deg);
+        bottom: -1rem;
+        display: block;
+    }
 }
 
 
@@ -295,4 +316,6 @@ h1 {
 .attribution {
     position: absolute;
     bottom: 0;
+    font-size: 1.4rem;
+    font-family: var(--Manrope);
 }
