@@ -12,53 +12,55 @@
 		<title>Frontend Mentor | Article Preview Card</title>
 	</head>
 	<body>
-		<main class="card">
-
-			<picture class="card__image"></picture>
-
-			<!-- Body -->
-			<article class="card__body">
-				<h1 class="card__heading">
-					Shift the overall look and feel by adding these wonderful touches to furniture
-					in your home
-				</h1>
-				<p class="card__text">
-					Ever been in a room and felt like something was missing? Perhaps it felt
-					slightly bare and uninviting. I've got some simple tips to help you make any
-					room feel complete.
-				</p>
-			</article>
-
-			<!-- Footer -->
-			<div class="card__footer">
-				<img
-					class="card__avatar"
-					src="images/avatar-michelle.jpg"
-					alt="portrait of Michelle"
-				/>
-				<div class="card__name-date">
-					<h2 class="card__name">Michelle Appleton</h2>
-					<p class="card__date">28 Jun, 2020</p>
+		<div class="wrapper">
+			<main class="card">
+				<picture class="card__image"></picture>
+				<div class="container">
+					<!-- Body -->
+					<article class="card__body">
+						<h1 class="card__heading">
+							Shift the overall look and feel by adding these wonderful touches to furniture
+							in your home
+						</h1>
+						<p class="card__text">
+							Ever been in a room and felt like something was missing? Perhaps it felt
+							slightly bare and uninviting. I've got some simple tips to help you make any
+							room feel complete.
+						</p>
+					</article>
+			
+					<!-- Footer -->
+					<div class="card__footer">
+						<img
+							class="card__avatar"
+							src="images/avatar-michelle.jpg"
+							alt="portrait of Michelle"
+						/>
+						<div class="card__name-date">
+							<h2 class="card__name">Michelle Appleton</h2>
+							<p class="card__date">28 Jun, 2020</p>
+						</div>
+						<button type="button" class="card__button">
+							<img src="images/icon-share.svg" alt="share-arrow pointing to right" />
+						</button>
+					</div>
+			
+					<!-- Active class -->
+					<div class="card__footer active">
+						<p class="card__footer-share">share</p>
+						<div class="card__footer-icons">
+							<img src="images/icon-facebook.svg" alt="icon-facebook" />
+							<img src="images/icon-twitter.svg" alt="icon-facebook" />
+							<img src="images/icon-pinterest.svg" alt="icon-facebook" />
+						</div class="card__footer-icons">
+						<button type="button" class="card__button-active">
+							<img src="images/icon-share.svg" alt="share-arrow pointing to right" />
+						</button>
+					</div>
 				</div>
-				<button type="button" class="card__button">
-					<img src="images/icon-share.svg" alt="share-arrow pointing to right" />
-				</button>
-			</div>
-
-			<!-- Active class -->
-			<div class="card__footer active">
-				<p class="card__footer-share">share</p>
-				<div class="card__footer-icons">
-					<img src="images/icon-facebook.svg" alt="icon-facebook" />
-					<img src="images/icon-twitter.svg" alt="icon-facebook" />
-					<img src="images/icon-pinterest.svg" alt="icon-facebook" />
-				</div class="card__footer-icons">
-				<button type="button" class="card__button">
-					<img src="images/icon-share.svg" alt="share-arrow pointing to right" />
-				</button>
-			</div>
-
-		</main>
+			
+			</main>
+		</div>
 		<div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a

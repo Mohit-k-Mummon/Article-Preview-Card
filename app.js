@@ -1,20 +1,33 @@
-const button = document.querySelectorAll('.card__button');
+const button = document.querySelector('.card__button');
 const cardFooter = document.querySelector('.card__footer');
 const cardFooterActive = document.querySelector('.card__footer.active');
+const buttonActive = document.querySelector('.card__button-active');
 let active = null;
 
 console.log(button);
 
-button.forEach(btn => {
-	btn.addEventListener('click', function () {
-		if (active !== 'true') {
-			cardFooter.style.display = 'none';
-			cardFooterActive.style.display = 'flex';
-			active = 'true';
-		} else {
-			cardFooter.style.display = 'flex';
-			cardFooterActive.style.display = 'none';
-			active = 'false';
-		}
-	});
+button.addEventListener('click', function () {
+	if (active !== 'true') {
+		cardFooterActive.style.opacity = '1';
+		cardFooterActive.style.maxHeight = '100vh';
+		active = 'true';
+	} else {
+		cardFooterActive.style.opacity = '0';
+		cardFooterActive.style.maxHeight = '0';
+
+		active = 'false';
+	}
+});
+
+buttonActive.addEventListener('click', function () {
+	if (active !== 'true') {
+		cardFooterActive.style.opacity = '1';
+		cardFooterActive.style.maxHeight = '100vh';
+		active = 'true';
+	} else {
+		cardFooterActive.style.opacity = '0';
+		cardFooterActive.style.maxHeight = '0';
+
+		active = 'false';
+	}
 });
